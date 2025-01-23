@@ -5,13 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { carouselItems } from "@/constants";
 
-
-
 const FeaturedDesigns: React.FC = () => {
   const [sliderRef, setSliderRef] = useState<Slider | null>(null); // Reference to the slider
   const [isFirstSlide, setIsFirstSlide] = useState(true);
   const [isLastSlide, setIsLastSlide] = useState(false);
-
 
   const handlePrevClick = () => {
     if (sliderRef) {
@@ -32,7 +29,7 @@ const FeaturedDesigns: React.FC = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     draggable: true,
-    beforeChange: (current: number, next: number) => {
+    beforeChange: (next: number) => {
       setIsFirstSlide(next === 0); // Update state for the first slide
       setIsLastSlide(next === carouselItems.length - settings.slidesToShow);
     },
