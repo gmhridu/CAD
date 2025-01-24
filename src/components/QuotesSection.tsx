@@ -3,7 +3,7 @@ const QuotesSection = () => {
     <section className="bg-white py-12">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">
-          People who <span className="text-red-500">❤</span> Cad Crowd
+          People who <span className="text-red-500">❤</span> PSB
         </h2>
 
         <div className="flex flex-col items-center md:flex-row md:justify-center gap-8">
