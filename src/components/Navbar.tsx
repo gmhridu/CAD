@@ -1,21 +1,33 @@
 import { navList } from "@/constants";
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { NavLink } from "react-router-dom";
+import { cn } from "@/lib/utils";
+import { logoImg } from "@/utils";
 
 const Navbar = () => {
   return (
-    <header className="w-full py-5 sm:px-10 px-5 flex justify-between items-center shrink-0 border-b border-gray-200 mb-10">
+    <header className="w-full py-2 sm:px-10 px-5 flex justify-between items-center shrink-0 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-200">
       <nav className="flex w-full items-center">
-        {/* <img src={logoImg} alt="PSB" /> */}
-        <h1 className="text-2xl font-bold text-[#fe595c]">PSB</h1>
-        <div className="flex flex-1 justify-center max-sm:hidden items-center">
+        <img src={logoImg} alt="PSB" className="size-16"/>
+        <div className="flex flex-1 justify-center max-sm:hidden items-center gap-1.5">
           {navList.map((nav, i) => (
-            <div
+            <NavLink
+              to={nav.path}
               key={i}
-              className="px-3 text-sm font-medium cursor-pointer text-[#484848] hover:text-black"
+              className={({ isActive }) =>
+                cn(
+                  "relative px-3 text-sm font-medium cursor-pointer hover:text-black",
+                  {
+                    "text-[#484848]": !isActive,
+                    "text-black after:content-[''] after:absolute after:left-0 after:bottom-[-20px] after:w-full after:h-[3px] after:bg-[#fe595c]":
+                      isActive,
+                  }
+                )
+              }
             >
-              {nav}
-            </div>
+              {nav.title}
+            </NavLink>
           ))}
         </div>
         <div className="flex items-center gap-5 max-sm:justify-end max-sm:flex-1">

@@ -28,6 +28,7 @@ import {
   tiffanyImg,
   usArmyImg,
 } from "@/utils";
+import { z } from "zod";
 
 export type TCarouselItem = {
   title: string;
@@ -50,11 +51,18 @@ export type TContractor = {
 };
 
 export const navList = [
-  "How it works",
-  "Services",
-  "Contests",
-  "Browser",
-  "Blog",
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "Contact Us",
+    path: "/contact",
+  },
+  {
+    title: "About",
+    path: "/about",
+  },
 ];
 
 export const companyLogos = [
@@ -210,3 +218,16 @@ export const contractor: TContractor[] = [
     btnTitle: "Learn more",
   },
 ];
+
+export const contactSchema = z.object({
+  name: z
+    .string()
+    .min(2, { message: "Name must be at least 2 characters long" }),
+  email: z.string().email({ message: "Invalid email address" }),
+  subject: z.string().min(1, { message: "Subject is required" }),
+  message: z
+    .string()
+    .min(10, { message: "Message must be at least 10 characters long" }),
+});
+
+export type TContactFormValues = z.infer<typeof contactSchema>;

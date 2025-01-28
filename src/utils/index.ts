@@ -1,4 +1,4 @@
-import logo from "/assets/images/cc-logo-30.svg";
+import logo from "/assets/images/logo.jpeg";
 import search from "/assets/images/search.svg";
 import nasa from "/assets/images/nasa.svg";
 import usArmy from "/assets/images/usa.svg";
@@ -28,6 +28,7 @@ import manufactureIcon from "/assets/images/services-manufacturing.svg";
 import graphic1 from "/assets/images/graphic-hire.svg";
 import graphic2 from "/assets/images/graphic-contests.svg";
 import graphic3 from "/assets/images/graphic-hourly.svg";
+import contactBG from "/assets/images/bg.svg";
 
 export const logoImg = logo;
 export const searchImg = search;
@@ -59,3 +60,4 @@ export const manufactureIconImg = manufactureIcon;
 export const graphic1Img = graphic1;
 export const graphic2Img = graphic2;
 export const graphic3Img = graphic3;
+export const contactBGImg = contactBG;
