@@ -6,8 +6,13 @@ import emailjs from "@emailjs/browser";
 import { SyncOutlined, MailOutlined, UserOutlined } from "@ant-design/icons";
 import { toast } from "sonner";
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 
-const Contact = () => {
+type TContactProps = {
+  className?: string;
+};
+
+const Contact = ({ className }: TContactProps) => {
   const [isLoading, setIsLoading] = useState(false);
   const {
     control,
@@ -46,103 +51,103 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <div className="flex flex-col items-center justify-center md:h-[75vh]">
-        <div className="max-w-lg mx-auto p-6 bg-white shadow-xl rounded-lg border border-gray-200 ">
-          <h2 className="text-3xl font-semibold text-center mb-4 text-gray-800">
-            Contact Us
-          </h2>
-          <p className="text-gray-600 text-center mb-6">
-            Have questions? Fill out the form below and we'll get back to you
-            shortly.
-          </p>
+    <div
+      className="flex flex-col items-center justify-center md:h-[75vh]"
+    >
+      <div className={cn("max-w-lg mx-auto p-6 bg-white shadow-xl rounded-lg border border-gray-200", className)}>
+        <h2 className="text-3xl font-semibold text-center mb-4 text-gray-800">
+          Contact Us
+        </h2>
+        <p className="text-gray-600 text-center mb-6">
+          Have questions? Fill out the form below and we'll get back to you
+          shortly.
+        </p>
 
-          <Form layout="vertical" onFinish={handleSubmit(onSubmit)}>
-            {/* Name Field */}
-            <Form.Item
-              label="Full Name"
-              validateStatus={errors.name ? "error" : ""}
-              help={errors.name?.message}
-            >
-              <Controller
-                name="name"
-                control={control}
-                render={({ field }) => (
-                  <Input
-                    {...field}
-                    prefix={<UserOutlined />}
-                    placeholder="John Doe"
-                  />
-                )}
-              />
-            </Form.Item>
+        <Form layout="vertical" onFinish={handleSubmit(onSubmit)}>
+          {/* Name Field */}
+          <Form.Item
+            label="Full Name"
+            validateStatus={errors.name ? "error" : ""}
+            help={errors.name?.message}
+          >
+            <Controller
+              name="name"
+              control={control}
+              render={({ field }) => (
+                <Input
+                  {...field}
+                  prefix={<UserOutlined />}
+                  placeholder="John Doe"
+                />
+              )}
+            />
+          </Form.Item>
 
-            {/* Email Field */}
-            <Form.Item
-              label="Email Address"
-              validateStatus={errors.email ? "error" : ""}
-              help={errors.email?.message}
-            >
-              <Controller
-                name="email"
-                control={control}
-                render={({ field }) => (
-                  <Input
-                    {...field}
-                    prefix={<MailOutlined />}
-                    placeholder="you@example.com"
-                  />
-                )}
-              />
-            </Form.Item>
+          {/* Email Field */}
+          <Form.Item
+            label="Email Address"
+            validateStatus={errors.email ? "error" : ""}
+            help={errors.email?.message}
+          >
+            <Controller
+              name="email"
+              control={control}
+              render={({ field }) => (
+                <Input
+                  {...field}
+                  prefix={<MailOutlined />}
+                  placeholder="you@example.com"
+                />
+              )}
+            />
+          </Form.Item>
 
-            {/* Subject Field */}
-            <Form.Item
-              label="Subject"
-              validateStatus={errors.subject ? "error" : ""}
-              help={errors.subject?.message}
-            >
-              <Controller
-                name="subject"
-                control={control}
-                render={({ field }) => (
-                  <Input {...field} placeholder="Enter your subject" />
-                )}
-              />
-            </Form.Item>
+          {/* Subject Field */}
+          <Form.Item
+            label="Subject"
+            validateStatus={errors.subject ? "error" : ""}
+            help={errors.subject?.message}
+          >
+            <Controller
+              name="subject"
+              control={control}
+              render={({ field }) => (
+                <Input {...field} placeholder="Enter your subject" />
+              )}
+            />
+          </Form.Item>
 
-            {/* Message Field */}
-            <Form.Item
-              label="Message"
-              validateStatus={errors.message ? "error" : ""}
-              help={errors.message?.message}
-            >
-              <Controller
-                name="message"
-                control={control}
-                render={({ field }) => (
-                  <Input.TextArea
-                    {...field}
-                    rows={4}
-                    placeholder="Type your message here..."
-                  />
-                )}
-              />
-            </Form.Item>
+          {/* Message Field */}
+          <Form.Item
+            label="Message"
+            validateStatus={errors.message ? "error" : ""}
+            help={errors.message?.message}
+          >
+            <Controller
+              name="message"
+              control={control}
+              render={({ field }) => (
+                <Input.TextArea
+                  {...field}
+                  rows={4}
+                  placeholder="Type your message here..."
+                />
+              )}
+            />
+          </Form.Item>
 
-            <Button
-              type="primary"
-              htmlType="submit"
-              className="w-full text-lg"
-              icon={isLoading ? <SyncOutlined spin /> : undefined}
-              disabled={isLoading}
-            >
-              {isLoading ? "Sending..." : "Send Message"}
-            </Button>
-          </Form>
-        </div>
+          <Button
+            type="primary"
+            htmlType="submit"
+            className="w-full text-lg"
+            icon={isLoading ? <SyncOutlined spin /> : undefined}
+            disabled={isLoading}
+          >
+            {isLoading ? "Sending..." : "Send Message"}
+          </Button>
+        </Form>
       </div>
-    </>
+    </div>
   );
 };
 

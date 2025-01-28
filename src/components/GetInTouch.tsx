@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button } from "./ui/Button";
+import Contact from "@/pages/Contact";
 
 const GetInTouch = () => {
   return (
@@ -15,11 +15,8 @@ const GetInTouch = () => {
           </span>
         </Link>
       </p>
-      <div className="flex justify-center mt-4">
-        <Link to={"/contact"}>
-          <Button variant={"primary"} className="px-10">Contact Us</Button>
-        </Link>
-      </div>
+      <Contact className="w-full max-w-7xl mx-2" />
+
     </div>
   );
 };
