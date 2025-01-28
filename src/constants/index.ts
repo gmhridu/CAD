@@ -56,8 +56,8 @@ export const navList = [
     path: "/",
   },
   {
-    title: "Contact Us",
-    path: "/contact",
+    title: "Services",
+    path: "/services",
   },
   {
     title: "About",

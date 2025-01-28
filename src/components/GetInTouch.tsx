@@ -9,14 +9,13 @@ const GetInTouch = () => {
       </h1>
       <p className="text-center text-lg pt-4">
         We're here to help.
-        <Link to={"/contact"}>
+        <Link to={"/about"}>
           <span className="pl-1 text-[#008489] hover:underline cursor-pointer">
             Send us an email
           </span>
         </Link>
       </p>
       <Contact className="w-full max-w-7xl mx-2" />
-
     </div>
   );
 };

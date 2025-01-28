@@ -1,7 +1,7 @@
 import { navList } from "@/constants";
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { logoImg } from "@/utils";
 
@@ -9,7 +9,9 @@ const Navbar = () => {
   return (
     <header className="w-full py-2 sm:px-10 px-5 flex justify-between items-center shrink-0 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-200">
       <nav className="flex w-full items-center">
-        <img src={logoImg} alt="PSB" className="size-16"/>
+        <Link to={"/"} className="cursor-pointer">
+          <img src={logoImg} alt="PSB" className="size-16" />
+        </Link>
         <div className="flex flex-1 justify-center max-sm:hidden items-center gap-1.5">
           {navList.map((nav, i) => (
             <NavLink
