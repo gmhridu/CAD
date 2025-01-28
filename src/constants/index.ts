@@ -155,42 +155,42 @@ export const carouselItems: TCarouselItem[] = [
 export const services: TServices[] = [
   {
     img: cadIconImg,
-    title: "CAD services",
+    title: "Highway Drawing drafting",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
     img: designIconImg,
-    title: "Design Contests",
+    title: "2D CAD Drafting Services",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
     img: contestIconImg,
-    title: "3D CAD design",
+    title: "3D/ Revit BIM Modelling",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
     img: industrialIconImg,
-    title: "Industrial design services",
+    title: "Design Validation",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
     img: productIconImg,
-    title: "Product design services",
+    title: "Pre-construction coordination and clash detection through BIM",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
     img: architecturalIconImg,
-    title: "Architectural design",
+    title: "Bill of Material generation",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
     img: ideaIconImg,
-    title: "Patent an idea",
+    title: "As-built drawing and modeling",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
     img: manufactureIconImg,
-    title: "Manufacturing & prototyping",
+    title: "Field Survey data digitalisation",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
 ];
@@ -231,3 +231,51 @@ export const contactSchema = z.object({
 });
 
 export type TContactFormValues = z.infer<typeof contactSchema>;
+
+export const AllServices: TServices[] = [
+  {
+    img: cadIconImg,
+    title: "Highway Drawing drafting",
+    details: "3D CAD Design New Product Design CAD Drafting Services & more",
+  },
+  {
+    img: designIconImg,
+    title: "2D CAD Drafting Services",
+    details: "3D CAD Design New Product Design CAD Drafting Services & more",
+  },
+  {
+    img: contestIconImg,
+    title: "3D/ Revit BIM Modelling",
+    details: "3D CAD Design New Product Design CAD Drafting Services & more",
+  },
+  {
+    img: industrialIconImg,
+    title: "Design Validation",
+    details: "3D CAD Design New Product Design CAD Drafting Services & more",
+  },
+  {
+    img: productIconImg,
+    title: "Pre-construction coordination and clash detection through BIM",
+    details: "3D CAD Design New Product Design CAD Drafting Services & more",
+  },
+  {
+    img: architecturalIconImg,
+    title: "Bill of Material generation",
+    details: "3D CAD Design New Product Design CAD Drafting Services & more",
+  },
+  {
+    img: ideaIconImg,
+    title: "As-built drawing and modeling",
+    details: "3D CAD Design New Product Design CAD Drafting Services & more",
+  },
+  {
+    img: manufactureIconImg,
+    title: "Field Survey data digitalisation",
+    details: "3D CAD Design New Product Design CAD Drafting Services & more",
+  },
+  {
+    img: manufactureIconImg,
+    title: "Facilities management data integration",
+    details: "3D CAD Design New Product Design CAD Drafting Services & more",
+  },
+];

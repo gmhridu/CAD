@@ -1,7 +1,8 @@
 import { services } from "@/constants";
 import { Button } from "@/components/ui/Button";
+import { Link } from "react-router-dom";
 
-const Services = () => {
+const ServicesSection = () => {
   return (
     <section className="container mx-auto flex flex-col items-center justify-center my-8 cursor-pointer">
       <h1 className="text-center font-bold text-[#333] text-3xl max-w-[768px] mb-8">
@@ -26,13 +27,15 @@ const Services = () => {
         ))}
       </div>
 
-      <div className="my-8">
-        <Button variant={"outline"} size={"lg"}>
-          See all services
-        </Button>
+      <div className="my-8 cursor-pointer">
+        <Link to={"/services"}>
+          <Button variant={"outline"} size={"lg"} className="cursor-pointer">
+            See all services
+          </Button>
+        </Link>
       </div>
     </section>
   );
 };
 
-export default Services;
+export default ServicesSection;

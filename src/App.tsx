@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Companies from "@/components/Companies";
 import FeaturedDesigns from "@/components/FeaturedDesigns";
-import Services from "@/components/Services";
+import ServicesSection from "@/components/ServicesSection";
 import Contractors from "@/components/Contractors";
 import QuotesSection from "@/components/QuotesSection";
 import ActionsSection from "@/components/ActionsSection";
@@ -16,7 +16,7 @@ function App() {
       <Hero />
       <Companies />
       <FeaturedDesigns />
-      <Services />
+      <ServicesSection />
       <Contractors />
       <QuotesSection />
       <ActionsSection />
