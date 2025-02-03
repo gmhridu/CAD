@@ -65,7 +65,7 @@
 }
 
 .custom-placeholder::placeholder {
-  color: var(--placeholder-color, white); /* Default to white */
+  color: var(--placeholder-color, #99a1af); /* Default to white */
   opacity: 1;
 }
 
