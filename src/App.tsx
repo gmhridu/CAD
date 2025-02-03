@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+
 import Companies from "@/components/Companies";
 import FeaturedDesigns from "@/components/FeaturedDesigns";
 import ServicesSection from "@/components/ServicesSection";
@@ -10,10 +10,12 @@ import Hire from "@/components/Hire";
 import CompaniesSection from "@/components/CompaniesSection";
 import CallToAction from "@/components/CallToAction";
 import GetInTouch from "./components/GetInTouch";
+import Slider from "./components/Slider";
 function App() {
   return (
     <>
-      <Hero />
+      <Slider />
+      {/* <Hero /> */}
       <Companies />
       <FeaturedDesigns />
       <ServicesSection />

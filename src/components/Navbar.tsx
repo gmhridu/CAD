@@ -7,7 +7,7 @@ import { logoImg } from "@/utils";
 
 const Navbar = () => {
   return (
-    <header className="w-full py-2 sm:px-10 px-5 flex justify-between items-center shrink-0 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-200">
+    <header className="w-full bg-[#040913] py-2 sm:px-10 px-5 flex justify-between items-center shrink-0 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-[#da1926] z-10">
       <nav className="flex w-full items-center">
         <Link to={"/"} className="cursor-pointer">
           <img src={logoImg} alt="PSB" className="size-16" />
@@ -19,10 +19,10 @@ const Navbar = () => {
               key={i}
               className={({ isActive }) =>
                 cn(
-                  "relative px-3 text-sm font-medium cursor-pointer hover:text-black",
+                  "relative px-3 text-lg font-medium cursor-pointer",
                   {
-                    "text-[#484848]": !isActive,
-                    "text-black after:content-[''] after:absolute after:left-0 after:bottom-[-20px] after:w-full after:h-[3px] after:bg-[#fe595c]":
+                    "text-white": !isActive,
+                    "text-[#da1926]":
                       isActive,
                   }
                 )
@@ -36,10 +36,10 @@ const Navbar = () => {
           <Search size={18} className="cursor-pointer" />
 
           <div className="flex items-center justify-center gap-3">
-            <p className="text-sm font-medium cursor-pointer text-[#484848] hover:text-black">
+            <p className="text-sm font-medium cursor-pointer text-white hover:text-[#da1926]">
               Sign up
             </p>
-            <p className="text-sm font-medium cursor-pointer text-[#484848] hover:text-black">
+            <p className="text-sm font-medium cursor-pointer text-white hover:text-[#da1926]">
               Login
             </p>
 

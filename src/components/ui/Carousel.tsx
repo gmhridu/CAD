@@ -1,11 +1,9 @@
 import * as React from "react";
-import useEmblaCarousel, {
-  type UseEmblaCarouselType,
-} from "embla-carousel-react";
+import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
+import { motion } from "framer-motion";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -156,13 +154,16 @@ const CarouselContent = React.forwardRef<
 
   return (
     <div ref={carouselRef} className="overflow-hidden">
-      <div
+      <motion.div
         ref={ref}
         className={cn(
           "flex",
           orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
           className
         )}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
         {...props}
       />
     </div>
@@ -177,7 +178,7 @@ const CarouselItem = React.forwardRef<
   const { orientation } = useCarousel();
 
   return (
-    <div
+    <motion.div
       ref={ref}
       role="group"
       aria-roledescription="slide"
@@ -186,6 +187,10 @@ const CarouselItem = React.forwardRef<
         orientation === "horizontal" ? "pl-4" : "pt-4",
         className
       )}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
       {...props}
     />
   );

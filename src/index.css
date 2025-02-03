@@ -1,8 +1,71 @@
 @import "tailwindcss";
 
-.screen-max-width {
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  position: relative;
-  max-width: 1120px;
+/* Tailwind-based Responsive Styling */
+
+/* Full-screen Slider */
+/* Apply min-height for different screen sizes */
+.main-slider2 {
+  min-height: 150px; /* Default min-height for larger screens */
 }
+
+/* Slider Wrapper for Image */
+.main-slider2 .slider-wrapper {
+  position: relative;
+  height: 100%;  /* Take up the full height of the container */
+  width: 100%;  /* Take up the full width of the container */
+}
+
+/* Image Scaling and Handling */
+.main-slider2 .slider-wrapper .image img {
+  width: 100%;  /* Ensure the image scales to the full width */
+  height: 100%;  /* Ensure the image scales to the full height */
+  object-fit: cover;  /* Cover the area without distortion */
+  max-width: none;  /* Disable max-width to allow for full scaling */
+}
+
+/* Styling for the caption (centered text) */
+.main-slider2 .slider-caption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.main-slider2 h1 {
+  color: #da1926;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 62px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 640px) {  /* Tailwind's sm breakpoint */
+  .main-slider2 {
+    min-height: 380px; /* Set min-height for medium screens and up */
+  }
+}
+
+@media (max-width: 599px) {
+  .main-slider2 h1 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .main-slider2 .slider-wrapper .image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.custom-placeholder::placeholder {
+  color: var(--placeholder-color, white); /* Default to white */
+  opacity: 1;
+}
+
