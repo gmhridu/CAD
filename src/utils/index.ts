@@ -73,3 +73,4 @@ export const slider3Img = slider3;
 export const slider4Img = slider4;
 export const slider5Img = slider5;
 export const slider6Img = slider6;
+

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Tailwind-based Responsive Styling */
 
 /* Full-screen Slider */
@@ -11,16 +15,16 @@
 /* Slider Wrapper for Image */
 .main-slider2 .slider-wrapper {
   position: relative;
-  height: 100%;  /* Take up the full height of the container */
-  width: 100%;  /* Take up the full width of the container */
+  height: 100%; /* Take up the full height of the container */
+  width: 100%; /* Take up the full width of the container */
 }
 
 /* Image Scaling and Handling */
 .main-slider2 .slider-wrapper .image img {
-  width: 100%;  /* Ensure the image scales to the full width */
-  height: 100%;  /* Ensure the image scales to the full height */
-  object-fit: cover;  /* Cover the area without distortion */
-  max-width: none;  /* Disable max-width to allow for full scaling */
+  width: 100%; /* Ensure the image scales to the full width */
+  height: 100%; /* Ensure the image scales to the full height */
+  object-fit: cover; /* Cover the area without distortion */
+  max-width: none; /* Disable max-width to allow for full scaling */
 }
 
 /* Styling for the caption (centered text) */
@@ -44,7 +48,8 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 640px) {  /* Tailwind's sm breakpoint */
+@media (min-width: 640px) {
+  /* Tailwind's sm breakpoint */
   .main-slider2 {
     min-height: 380px; /* Set min-height for medium screens and up */
   }
@@ -68,4 +73,3 @@
   color: var(--placeholder-color, #99a1af); /* Default to white */
   opacity: 1;
 }
-

@@ -24,7 +24,7 @@ const FeaturedDesigns: React.FC = () => {
 
   const settings = {
     dots: true,
-    infinite: false, // Disable infinite scrolling
+    infinite: false, 
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -59,7 +59,8 @@ const FeaturedDesigns: React.FC = () => {
   };
 
   return (
-    <div className="px-4 py-8 relative">
+    <div
+    className="px-4 py-8 relative">
       {/* Left Arrow */}
       {!isFirstSlide && (
         <button
