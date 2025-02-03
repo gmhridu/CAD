@@ -9,19 +9,39 @@ const ServicesSection = () => {
         Help with CAD services, industrial design, patents, manufacturing,
         licensing & more
       </h1>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {services.map((item, i) => (
+      <div className="grid grid-cols-1 sm:grid-col-2 md:grid-cols-3 items-center gap-2">
+        {services.map((project, i) => (
           <div
             key={i}
-            className="border border-gray-200 hover:border-[#007d8c] flex flex-col items-center p-6 relative overflow-hidden transition-all"
+            className="project-block-one border border-gray-100 rounded-md"
           >
-            <div className="bg-[#0084890F] rounded-full p-3 w-10 mb-4">
-              <img src={item.img} alt={item.title} className="size-4" />
-            </div>
-            <h2 className="text-xl font-bold text-center">{item.title}</h2>
+            <div className="inner-box">
+              <div className="image">
+                <img
+                  src={project.img}
+                  alt={project.title}
+                  className="h-56 w-full object-cover"
+                />
+                <div className="caption p-4">
+                  <h4 className="font-semibold text-lg line-clamp-1">
+                    {project.title}
+                  </h4>
+                </div>
 
-            <div className="absolute inset-0 bg-white opacity-0 hover:opacity-[100%] transition-opacity flex flex-col items-center justify-center text-black border-[#007d8c] px-4 text-center">
-              <h3>{item.details}</h3>
+                <div className="overlay-box">
+                  <div className="overlay-inner">
+                    <div className="content">
+                      <h4 className="line-clamp-1">{project.title}</h4>
+                      <div className="text line-clamp-2">{project.details}</div>
+                     <Link to={'/services'}>
+                     <Button variant={"primary"} className="read-more">
+                        Read More
+                      </Button>
+                     </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         ))}
@@ -29,7 +49,7 @@ const ServicesSection = () => {
 
       <div className="my-8 cursor-pointer">
         <Link to={"/services"}>
-          <Button variant={"outline"} size={"lg"} className="cursor-pointer">
+          <Button variant={"primary"} size={"lg"} className="cursor-pointer">
             See all services
           </Button>
         </Link>

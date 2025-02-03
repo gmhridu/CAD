@@ -1,12 +1,18 @@
 import {
   architecturalIconImg,
   bcgImg,
+  billImg,
   cadIconImg,
   contestIconImg,
+  coordinationImg,
   designIconImg,
+  designValidationImg,
+  drawingImg,
+  fieldImg,
   graphic1Img,
   graphic2Img,
   graphic3Img,
+  highwayImg,
   ideaIconImg,
   industrialIconImg,
   jplImg,
@@ -25,7 +31,9 @@ import {
   slideImg8,
   slideImg9,
   targetImg,
+  threeDImg,
   tiffanyImg,
+  twoDImg,
   usArmyImg,
 } from "@/utils";
 import { z } from "zod";
@@ -154,42 +162,42 @@ export const carouselItems: TCarouselItem[] = [
 
 export const services: TServices[] = [
   {
-    img: cadIconImg,
+    img: highwayImg,
     title: "Highway Drawing drafting",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
-    img: designIconImg,
+    img: twoDImg,
     title: "2D CAD Drafting Services",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
-    img: contestIconImg,
+    img: threeDImg,
     title: "3D/ Revit BIM Modelling",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
-    img: industrialIconImg,
+    img: designValidationImg,
     title: "Design Validation",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
-    img: productIconImg,
+    img: coordinationImg,
     title: "Pre-construction coordination and clash detection through BIM",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
-    img: architecturalIconImg,
+    img: billImg,
     title: "Bill of Material generation",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
-    img: ideaIconImg,
+    img: drawingImg,
     title: "As-built drawing and modeling",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },
   {
-    img: manufactureIconImg,
+    img: fieldImg,
     title: "Field Survey data digitalisation",
     details: "3D CAD Design New Product Design CAD Drafting Services & more",
   },

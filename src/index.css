@@ -73,3 +73,691 @@ html {
   color: var(--placeholder-color, #99a1af); /* Default to white */
   opacity: 1;
 }
+
+.project-section {
+  padding: 100px 0px 70px;
+}
+
+.project-section .filters.center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-block-one {
+  position: relative;
+}
+
+.project-block-one .inner-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.project-block-one .inner-box .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-block-one .inner-box .image img {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.project-block-one .inner-box .caption {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px 30px;
+  background: rgba(0, 0, 0, 0.58);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.project-block-one:hover .inner-box .caption {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.project-block-one .icon-box {
+  color: #fff;
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.project-block-one h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.project-block-one h4 a {
+  color: #fff;
+}
+
+.project-block-one .inner-box .overlay-box {
+  position: absolute;
+  content: "";
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  opacity: 0;
+  -webkit-transform: perspective(400px) rotateX(-90deg);
+  -ms-transform: perspective(400px) rotateX(-90deg);
+  transform: perspective(800px) rotateX(-90deg);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: rgba(230, 32, 45, 0.8);
+}
+
+.project-block-one .inner-box:hover .overlay-box {
+  opacity: 1;
+  -webkit-transform: perspective(800px) rotateX(0deg);
+  -ms-transform: perspective(800px) rotateX(0deg);
+  transform: perspective(800px) rotateX(0deg);
+}
+
+.project-block-one .inner-box .overlay-box .overlay-inner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 70%;
+  display: table;
+  padding: 15px 20px;
+  vertical-align: bottom;
+}
+
+.project-block-one .inner-box .overlay-box .overlay-inner .content {
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.project-block-one .inner-box .overlay-box h2 {
+  position: relative;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.project-block-one .inner-box .overlay-box h2 a {
+  position: relative;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.project-block-one .inner-box .overlay-box h2 a:hover {
+  color: #17b6e6;
+}
+
+.project-block-one .inner-box .overlay-box .text {
+  position: relative;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.9em;
+  margin-bottom: 20px;
+}
+
+.project-block-one .inner-box .overlay-box .read-more {
+  position: relative;
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+  padding: 11px 18px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-block-one .inner-box .overlay-box .read-more:hover {
+  color: #da1926;
+}
+
+/* project block two */
+
+.project-block-two {
+  position: relative;
+}
+
+.project-block-two .inner-box {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.project-block-two .inner-box .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-block-two .inner-box .image img {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.project-block-two .inner-box .lower-box {
+  position: relative;
+  background: #fff;
+  -webkit-transition: all 0.5s;
+}
+.project-section {
+  padding: 100px 0px 70px;
+}
+
+.project-section .filters.center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-block-one {
+  position: relative;
+}
+
+.project-block-one .inner-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.project-block-one .inner-box .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-block-one .inner-box .image img {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.project-block-one .inner-box .caption {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px 30px;
+  background: rgba(0, 0, 0, 0.58);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.project-block-one:hover .inner-box .caption {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.project-block-one .icon-box {
+  color: #fff;
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.project-block-one h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.project-block-one h4 a {
+  color: #fff;
+}
+
+.project-block-one .inner-box .overlay-box {
+  position: absolute;
+  content: "";
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  opacity: 0;
+  -webkit-transform: perspective(400px) rotateX(-90deg);
+  -ms-transform: perspective(400px) rotateX(-90deg);
+  transform: perspective(800px) rotateX(-90deg);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: rgba(230, 32, 45, 0.8);
+}
+
+.project-block-one .inner-box:hover .overlay-box {
+  opacity: 1;
+  -webkit-transform: perspective(800px) rotateX(0deg);
+  -ms-transform: perspective(800px) rotateX(0deg);
+  transform: perspective(800px) rotateX(0deg);
+}
+
+.project-block-one .inner-box .overlay-box .overlay-inner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 70%;
+  display: table;
+  padding: 15px 20px;
+  vertical-align: bottom;
+}
+
+.project-block-one .inner-box .overlay-box .overlay-inner .content {
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.project-block-one .inner-box .overlay-box h2 {
+  position: relative;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.project-block-one .inner-box .overlay-box h2 a {
+  position: relative;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.project-block-one .inner-box .overlay-box h2 a:hover {
+  color: #17b6e6;
+}
+
+.project-block-one .inner-box .overlay-box .text {
+  position: relative;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.9em;
+  margin-bottom: 20px;
+}
+
+.project-block-one .inner-box .overlay-box .read-more {
+  position: relative;
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+  padding: 11px 18px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-block-one .inner-box .overlay-box .read-more:hover {
+  color: #da1926;
+}
+
+/* project block two */
+
+.project-block-two {
+  position: relative;
+}
+
+.project-block-two .inner-box {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.project-block-two .inner-box .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-block-two .inner-box .image img {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.project-block-two .inner-box .lower-box {
+  position: relative;
+  background: #fff;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.project-block-two .inner-box .caption {
+  position: relative;
+  padding: 20px 30px 30px;
+  margin-bottom: -71px;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.project-block-two .inner-box .caption {
+  position: relative;
+  padding: 20px 30px 30px;
+  margin-bottom: -71px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.project-block-two .inner-box:hover .caption {
+  -webkit-transform: translateY(-70px);
+  -ms-transform: translateY(-70px);
+  transform: translateY(-70px);
+}
+
+.project-block-two h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+.project-block-two h4 a {
+  color: #222;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.project-block-two h4 a:hover {
+  color: #da1926;
+}
+
+.project-block-two .inner-box .text {
+  position: relative;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  margin-bottom: 15px;
+  color: #848484;
+}
+
+.project-block-two .link-btn {
+  position: relative;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.project-block-two .inner-box:hover .link-btn {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.project-block-two .link-btn .theme-btn {
+  padding: 6px 20px;
+}
+
+/* project info */
+
+.project-info {
+  position: relative;
+  padding: 30px 0 15px;
+  background-color: #da1926;
+}
+
+.project-info h4 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 25px;
+  margin-left: 40px;
+}
+
+.project-info-list {
+  position: relative;
+}
+
+.project-info-list li {
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 13px 0;
+  padding-left: 80px;
+  padding-right: 70px;
+  border-top: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+.project-info-list li strong {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-info-list li:last-child {
+  padding-right: 0px;
+  border-right: 0px;
+}
+
+.project-info-list li .icon {
+  position: absolute;
+  left: 30px;
+  top: 21px;
+  line-height: 1em;
+}
+.project-info-list li span:before {
+  margin: 0;
+  color: #fff;
+  font-size: 30px;
+}
+
+.project-info-list li:last-child .icon {
+}
+
+.pro-right h6 {
+  color: #454545;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.pro-right .social li {
+  display: inline-block;
+}
+.pro-right .social li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #da1926;
+  border: 1px solid #cacfd3;
+  line-height: 30px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+/* project details */
+
+.project-details {
+  position: relative;
+  padding: 100px 0px 70px;
+}
+
+.project-details .image.large {
+  position: relative;
+}
+
+.project-details .donate-bar {
+  position: absolute;
+  padding: 20px;
+  width: auto;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #ffffffcf;
+  height: 110px;
+}
+.project-details .donate-bar .progress-title {
+  position: relative;
+  background: none;
+}
+.project-details .donate-bar .progress-title h4 {
+  font-size: 24px;
+  color: #222;
+  font-weight: 600;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.project-details .donate-bar .progress-title h4:hover {
+  color: #da1926;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.project-details .donate-bar .bar-inner {
+  position: relative;
+  width: 100%;
+  height: 14px;
+  border-radius: 7px;
+}
+
+.project-details .donate-bar .bar-inner .bar {
+  position: absolute;
+  left: 0%;
+  top: 12px;
+  height: 14px;
+  width: 0px;
+  background: #fc2c62 url(../images/icons/progress-bar-fill.jpg) left center
+    repeat-x;
+  border-radius: 7px;
+  -webkit-transition: all 2000ms ease;
+  -ms-transition: all 2000ms ease;
+  -o-transition: all 2000ms ease;
+  -moz-transition: all 2000ms ease;
+  transition: all 2000ms ease;
+}
+
+.project-details .donate-info {
+  position: relative;
+  color: #c9c9c9;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.project-details .donate-info strong {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #363636;
+}
+
+.project-details .donate-info .goal {
+  color: #ff4d49;
+}
+
+.project-details .count-box {
+  position: absolute;
+  right: 0px;
+  top: -50px;
+  display: block;
+  height: 30px;
+  min-width: 50px;
+  padding: 0px 10px;
+  line-height: 30px;
+  background: #2a2d32;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.project-details .count-box:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  top: 100%;
+  border: 5px solid transparent;
+  border-top: 5px solid #2a2d32;
+}
+
+.project-details .content {
+  padding: 20px 0 40px;
+}
+
+.project-details .content h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-details .content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-details .content p {
+  margin-bottom: 0px;
+}
+
+.project-details .content p + p {
+  margin-top: 15px;
+}

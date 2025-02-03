@@ -1,10 +1,17 @@
 import Contact from "@/pages/Contact";
 import { contactBGImg } from "@/utils";
+import { motion } from "framer-motion";
+import "aos/dist/aos.css";
 
 const About = () => {
   return (
     <>
-      <div
+      {/* Header Section */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
         style={{
           textAlign: "center",
           color: "#fff",
@@ -19,10 +26,23 @@ const About = () => {
         <h1 className="text-2xl pt-8 pb-8 text-left px-10 font-bold">
           About PSB Support Team
         </h1>
-      </div>
-      <div className="flex items-center flex-col md:flex-row container mx-auto">
+      </motion.div>
+
+      {/* Content Section */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex items-center flex-col md:flex-row container mx-auto"
+      >
         {/* Left Section - Services Description */}
-        <div className="w-full md:w-1/2 p-6 bg-white rounded-lg">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: false }}
+          className="w-full md:w-1/2 p-6 bg-white rounded-lg"
+        >
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
             About PSB Limited
           </h2>
@@ -56,13 +76,19 @@ const About = () => {
             Excellent processes are the cornerstone for successfully outsourcing
             your CAD requirements.
           </p>
-        </div>
+        </motion.div>
 
         {/* Right Section - Contact Form */}
-        <div className="w-full md:w-1/2 p-6">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: false }}
+          className="w-full md:w-1/2 p-6"
+        >
           <Contact />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 };

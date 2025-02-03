@@ -35,6 +35,14 @@ import slider3 from "/assets/images/image-3.jpg";
 import slider4 from "/assets/images/image-4.jpg";
 import slider5 from "/assets/images/image-5.jpg";
 import slider6 from "/assets/images/image-6.jpg";
+import highway from "/assets/images/highway.jpg";
+import twoD from "/assets/images/2d.png";
+import threeD from "/assets/images/3d.png";
+import bill from "/assets/images/bill.jpg";
+import coordination from "/assets/images/coordination.jpg";
+import designValidation from "/assets/images/design-validation.jpeg";
+import drawing from "/assets/images/drawing-services.jpg";
+import field from "/assets/images/field-survey.jpeg";
 
 export const logoImg = logo;
 export const searchImg = search;
@@ -73,4 +81,13 @@ export const slider3Img = slider3;
 export const slider4Img = slider4;
 export const slider5Img = slider5;
 export const slider6Img = slider6;
+export const highwayImg = highway;
+export const twoDImg = twoD;
+export const threeDImg = threeD;
+export const billImg = bill;
+export const coordinationImg = coordination;
+export const designValidationImg = designValidation;
+export const drawingImg = drawing;
+export const fieldImg = field;
+
 
