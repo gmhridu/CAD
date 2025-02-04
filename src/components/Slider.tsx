@@ -15,26 +15,24 @@ const Slider = () => {
   const slides = [
     {
       image: slider1Img,
-      heading: "Relation Of Humanity",
-      subHeading: "There Is One Relation Above All",
-      text: "Consectetur adipisicing elit sed do ei usmod tempor incididunt. Enim ad minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo con sequat duis aute irure dolor.",
-      link: "contact.html",
+      heading: "Innovative CAD Design Solutions",
+      subHeading: "Transforming Ideas into Reality",
+      text: "Experience precision and creativity with our cutting-edge CAD services. From industrial design to prototyping, we help bring your concepts to life with unmatched accuracy.",
     },
     {
       image: slider2Img,
-      heading: "Relation Of Humanity",
-      subHeading: "There Is One Relation Above All",
-      text: "Consectetur adipisicing elit sed do ei usmod tempor incididunt. Enim ad minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo con sequat duis aute irure dolor.",
-      link: "contact.html",
+      heading: "Expert Industrial Design Services",
+      subHeading: "Enhancing Product Development",
+      text: "Our team delivers innovative designs that meet functionality, efficiency, and aesthetic goals. Achieve optimal results with our tailored CAD solutions for various industries.",
     },
     {
       image: slider3Img,
-      heading: "Relation Of Humanity",
-      subHeading: "There Is One Relation Above All",
-      text: "Consectetur adipisicing elit sed do ei usmod tempor incididunt. Enim ad minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo con sequat duis aute irure dolor.",
-      link: "contact.html",
+      heading: "Seamless Engineering and Prototyping",
+      subHeading: "From Blueprint to Market-Ready Products",
+      text: "Accelerate your product development process with our comprehensive CAD modeling and rapid prototyping services, ensuring top-quality results at every stage.",
     },
   ];
+  
 
   const handleNext = () => {
     setPrevSlide(currentSlide);
