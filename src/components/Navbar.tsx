@@ -9,23 +9,21 @@ const Navbar = () => {
   return (
     <header className="w-full bg-[#040913] py-2 sm:px-10 px-5 flex justify-between items-center shrink-0 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-[#da1926] z-10">
       <nav className="flex w-full items-center">
-        <Link to={"/"} className="cursor-pointer">
-          <img src={logoImg} alt="PSB" className="size-16" />
-        </Link>
+        <div className="size-16">
+          <Link to={"/"} className="cursor-pointer">
+            <img src={logoImg} alt="PSB" className="w-full h-full rounded-md" />
+          </Link>
+        </div>
         <div className="flex flex-1 justify-center max-sm:hidden items-center gap-1.5">
           {navList.map((nav, i) => (
             <NavLink
               to={nav.path}
               key={i}
               className={({ isActive }) =>
-                cn(
-                  "relative px-3 text-lg font-medium cursor-pointer",
-                  {
-                    "text-white": !isActive,
-                    "text-[#da1926]":
-                      isActive,
-                  }
-                )
+                cn("relative px-3 text-lg font-medium cursor-pointer", {
+                  "text-white": !isActive,
+                  "text-[#da1926]": isActive,
+                })
               }
             >
               {nav.title}

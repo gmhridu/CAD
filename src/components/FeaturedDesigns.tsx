@@ -64,7 +64,7 @@ const FeaturedDesigns: React.FC = () => {
       {/* Left Arrow */}
       {!isFirstSlide && (
         <button
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-teal-500 text-white rounded-full p-2 z-10 cursor-pointer"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#da1926] text-white rounded-full p-2 z-10 cursor-pointer"
           onClick={handlePrevClick}
         >
           <ChevronLeft />
@@ -74,7 +74,7 @@ const FeaturedDesigns: React.FC = () => {
       {/* Right Arrow */}
       {!isLastSlide && (
         <button
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-teal-500 text-white rounded-full p-2 z-10 cursor-pointer"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#da1926] text-white rounded-full p-2 z-10 cursor-pointer"
           onClick={handleNextClick}
         >
           <ChevronRight />
@@ -94,10 +94,10 @@ const FeaturedDesigns: React.FC = () => {
                 alt={item.title}
                 className="w-full object-cover rounded-t-lg"
               />
-              <div className="absolute inset-0 bg-[#007d8c] opacity-0 hover:opacity-90 transition-opacity flex flex-col items-center justify-center text-white px-4 text-center">
+              <div className="absolute inset-0 bg-[#da1926] opacity-0 hover:opacity-90 transition-opacity flex flex-col items-center justify-center text-white px-4 text-center">
                 <h3 className="text-lg font-bold">{item.title}</h3>
                 <p className="text-sm mt-2">{item.description}</p>
-                <button className="mt-4 px-4 py-2 bg-white text-teal-500 rounded-md">
+                <button className="mt-4 px-4 py-2 bg-white text-[#da1926] rounded-md">
                   Find out more
                 </button>
               </div>

@@ -1,4 +1,5 @@
 import logo from "/assets/images/logo.jpeg";
+import logoWithOutBG from "@/assets/logo-bg.png";
 import search from "/assets/images/search.svg";
 import nasa from "/assets/images/nasa.svg";
 import usArmy from "/assets/images/usa.svg";
@@ -45,6 +46,7 @@ import drawing from "/assets/images/drawing-services.jpg";
 import field from "/assets/images/field-survey.jpeg";
 
 export const logoImg = logo;
+export const logoWithOutBGImg = logoWithOutBG;
 export const searchImg = search;
 export const nasaImg = nasa;
 export const usArmyImg = usArmy;
@@ -89,5 +91,3 @@ export const coordinationImg = coordination;
 export const designValidationImg = designValidation;
 export const drawingImg = drawing;
 export const fieldImg = field;
-
-

@@ -1,5 +1,5 @@
 import Contact from "@/pages/Contact";
-import { logoImg } from "@/utils";
+import { logoWithOutBGImg } from "@/utils";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
@@ -10,7 +10,11 @@ const Footer = () => {
           <div className="space-y-6">
             {/* Logo & Description */}
             <div>
-              <img src={logoImg} alt="Footer Logo" className="size-10" />
+              <img
+                src={logoWithOutBGImg}
+                alt="Footer Logo"
+                className="size-24"
+              />
               <p className="mt-4 text-gray-400">
                 Consectetur adipisicing elit sed do ei usmod tempor incididunt.
                 Enim ad minim veniam, quis nostrud exercitation ullamco laboris
