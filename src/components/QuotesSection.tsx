@@ -1,3 +1,5 @@
+import { avatarImg } from "@/utils";
+
 const QuotesSection = () => {
   return (
     <section className="bg-white py-12">
@@ -9,8 +11,10 @@ const QuotesSection = () => {
         <div className="flex flex-col items-center md:flex-row md:justify-center gap-8">
           <div>
             <img
-              src="https://static.cadcrowd.com/themes/v5/images/users/reena-factor-200.jpg"
-              alt="Reena Factor"
+              src={avatarImg}
+              alt="Avatar"
+              width={240}
+              height={240}
               className="rounded-lg mr-4"
             />
           </div>
@@ -24,7 +28,7 @@ const QuotesSection = () => {
               </p>
             </div>
             <div className="flex items-center justify-center mt-6 gap-7">
-              <div>
+              <div className={'text-left'}>
                 <h5 className="font-bold text-gray-800">Reena Factor</h5>
                 <h6 className="text-gray-500 text-sm">Brand Manager</h6>
               </div>

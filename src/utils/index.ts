@@ -44,6 +44,7 @@ import coordination from "/assets/images/coordination.jpg";
 import designValidation from "/assets/images/design-validation.jpeg";
 import drawing from "/assets/images/drawing-services.jpg";
 import field from "/assets/images/field-survey.jpeg";
+import avatar from '/assets/images/avatar.jpg'
 
 export const logoImg = logo;
 export const logoWithOutBGImg = logoWithOutBG;
@@ -91,3 +92,4 @@ export const coordinationImg = coordination;
 export const designValidationImg = designValidation;
 export const drawingImg = drawing;
 export const fieldImg = field;
+export const avatarImg = avatar;

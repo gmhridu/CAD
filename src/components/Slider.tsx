@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { slider1Img, slider2Img, slider3Img } from "@/utils"; // Assuming you have the images imported
-import Image from "./ui/Image"; // Assuming you are using the Next.js Image component
+import { slider1Img, slider2Img, slider3Img } from "@/utils";
+import Image from "./ui/Image";
 import { Button } from "./ui/Button";
 import { Link } from "react-router-dom";
 
@@ -32,7 +32,6 @@ const Slider = () => {
       text: "Accelerate your product development process with our comprehensive CAD modeling and rapid prototyping services, ensuring top-quality results at every stage.",
     },
   ];
-  
 
   const handleNext = () => {
     setPrevSlide(currentSlide);
@@ -132,7 +131,7 @@ const Slider = () => {
               className="link-btn sm:mt-6"
             >
               <Link to={"/about"}>
-                <Button variant={'primary'}>Contact Us</Button>
+                <Button variant={"primary"}>Contact Us</Button>
               </Link>
             </motion.div>
           </div>

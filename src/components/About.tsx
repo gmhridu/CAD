@@ -1,34 +1,14 @@
 import Contact from "@/pages/Contact";
-import { contactBGImg } from "@/utils";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
+import HeaderComponent from "@/components/HeaderComponent.tsx";
 
 const About = () => {
   return (
     <>
-      {/* Header Section */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        style={{
-          textAlign: "center",
-          color: "#fff",
-          paddingBottom: "28px",
-          backgroundImage: `linear-gradient(rgba(0, 132, 137, 0.5), rgba(0, 132, 121, 0.5)), url("${contactBGImg}")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="mt-2"
-      >
-        <h1 className="text-2xl pt-8 pb-8 text-left px-10 font-bold">
-          About PSB Support Team
-        </h1>
-      </motion.div>
+      <HeaderComponent text={'About PSB Support Team'}/>
 
-      {/* Content Section */}
+        {/* Content Section */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
