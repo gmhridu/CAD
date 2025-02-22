@@ -1,4 +1,3 @@
-import Contact from "@/pages/Contact";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
 import HeaderComponent from "@/components/HeaderComponent.tsx";
@@ -6,16 +5,15 @@ import HeaderComponent from "@/components/HeaderComponent.tsx";
 const About = () => {
   return (
     <>
-      <HeaderComponent text={'About PSB Support Team'}/>
+      <HeaderComponent text={"About PSB Support Team"} />
 
-        {/* Content Section */}
+      {/* Content Section */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="flex items-center flex-col md:flex-row container mx-auto"
+        className="flex items-center flex-col justify-center container mx-auto my-16"
       >
-        {/* Left Section - Services Description */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -56,17 +54,6 @@ const About = () => {
             Excellent processes are the cornerstone for successfully outsourcing
             your CAD requirements.
           </p>
-        </motion.div>
-
-        {/* Right Section - Contact Form */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: false }}
-          className="w-full md:w-1/2 p-6"
-        >
-          <Contact />
         </motion.div>
       </motion.div>
     </>
