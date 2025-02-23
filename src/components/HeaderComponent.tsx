@@ -10,7 +10,7 @@ const HeaderComponent = ({text}: {text:string}) => {
             viewport={{ once: true }}
             className="bg-black/75 text-left py-16"
         >
-            <h1 className="container mx-auto text-3xl font-bold text-gray-200">{text}</h1>
+            <h1 className="px-5 mx-5 text-3xl font-bold text-gray-200">{text}</h1>
         </motion.div>
     )
 }

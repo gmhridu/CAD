@@ -60,11 +60,11 @@ const FeaturedDesigns: React.FC = () => {
 
   return (
     <div
-    className="px-4 py-8 relative">
+    className="px-5 py-8 relative mx-5">
       {/* Left Arrow */}
       {!isFirstSlide && (
         <button
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#da1926] text-white rounded-full p-2 z-10 cursor-pointer"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-[#da1926] text-white rounded-full p-2 z-10 cursor-pointer"
           onClick={handlePrevClick}
         >
           <ChevronLeft />
@@ -74,7 +74,7 @@ const FeaturedDesigns: React.FC = () => {
       {/* Right Arrow */}
       {!isLastSlide && (
         <button
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#da1926] text-white rounded-full p-2 z-10 cursor-pointer"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#da1926] text-white rounded-full p-2 z-10 cursor-pointer"
           onClick={handleNextClick}
         >
           <ChevronRight />

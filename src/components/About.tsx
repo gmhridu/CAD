@@ -12,14 +12,14 @@ const About = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="flex items-center flex-col justify-center container mx-auto my-16"
+        className="flex items-center flex-col px-5 mx-5 my-16"
       >
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          className="w-full md:w-1/2 p-6 bg-white rounded-lg"
+          className="w-full bg-white rounded-lg"
         >
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
             About PSB Limited

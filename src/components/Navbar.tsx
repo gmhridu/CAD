@@ -7,7 +7,7 @@ import { logoImg } from "@/utils";
 
 const Navbar = () => {
   return (
-    <header className="w-full bg-[#040913] py-2 sm:px-10 px-5  shrink-0 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-[#da1926] z-10">
+    <header className="w-full bg-[#040913] py-2 sm:px-10 px-5 shrink-0 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-[#da1926] z-10">
       <nav className="flex w-full justify-between items-center">
         <div className="size-16">
           <Link to={"/"} className="cursor-pointer">

@@ -67,7 +67,7 @@ const Contact = ({
   };
 
   return (
-    <div className="flex flex-col items-center justify-center md:h-[75vh]">
+    <div className={cn('flex flex-col items-center justify-center md:h-[75vh]')}>
       <div
         className={cn(
           "max-w-lg mx-auto p-6 bg-white shadow-xl rounded-lg border border-gray-200",

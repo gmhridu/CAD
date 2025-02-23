@@ -56,7 +56,7 @@ const Slider = () => {
   return (
     <section className="main-slider2 relative w-full h-[50vh] sm:h-[60vh] lg:h-[75vh]">
       <div
-        className="relative w-full h-full flex justify-center items-center bg-black overflow-hidden"
+        className="relative w-full h-full flex justify-center items-center bg-black/75 overflow-hidden"
         onMouseEnter={() => setShowButtons(true)}
         onMouseLeave={() => setShowButtons(false)}
       >
@@ -91,7 +91,7 @@ const Slider = () => {
 
         {/* Slider Caption */}
         <div className="slider-caption absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center z-10 text-white p-4">
-          <div className="container">
+          <div className="container mx-auto md:pl-16">
             <motion.h2
               key={`subHeading-${currentSlide}`}
               initial={{ opacity: 0, y: -20 }}

@@ -8,12 +8,12 @@ const Services = () => {
     return (
         <>
             <HeaderComponent text={'Service PSB Support Team'}/>
-            <section className="container mx-auto flex flex-col items-center justify-center my-8 cursor-pointer">
+            <section className="mx-5 px-5 flex flex-col items-center justify-center my-8 cursor-pointer">
                 <h1 className="text-center font-bold text-[#333] text-3xl max-w-[768px] mb-8">
                     Help with CAD services, industrial design, patents, manufacturing,
                     licensing & more
                 </h1>
-                <div className="grid grid-cols-1 sm:grid-col-2 md:grid-cols-3 items-center gap-2">
+                <div className="grid grid-cols-1 sm:grid-col-2 md:grid-cols-4 items-center gap-2">
                     {services.map((project, i) => (
                         <div
                             key={i}
