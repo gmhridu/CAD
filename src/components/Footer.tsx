@@ -72,6 +72,7 @@ const Footer = () => {
               {/*  </li>*/}
               {/*</ul>*/}
             </div>
+            {/* align */}
             {/* Quick Links */}
             <div>
               <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
